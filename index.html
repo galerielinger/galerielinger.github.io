@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie Linger</title>
+    <style>
+      :root {
+        --font-primary--family: "Host Grotesk", sans-serif;
+        --font-primary--style: normal;
+        --font-primary--weight: 400;
+        --font-size-base: calc(16 / 16 * 1rem);
+        --font-size-sm: calc(var(--font-size-base) * 0.875);
+        --font-size-xs: calc(var(--font-size-base) * 0.75);
+        --font-size-lg: calc(var(--font-size-base) * 1.125);
+        --font-size-xl: calc(var(--font-size-base) * 1.25);
+        --heading-scale: 1.2;
+        --font-size-h1: calc(1.75rem * var(--heading-scale));
+        --font-size-h2: calc(1.35rem * var(--heading-scale));
+        --font-size-h3: calc(1.3rem * var(--heading-scale));
+        --font-size-h4: calc(1rem * var(--heading-scale));
+        --font-size-h5: calc(0.9rem * var(--heading-scale));
+        --font-size-h6: calc(0.85rem * var(--heading-scale));
+        --section-title-size: 2.5rem;
+        --page-width: 90rem;
+        --page-margin: calc(20 / 16 * 1rem);
+        --product-grid-gap-global: 1rem;
+        --color-background: #e6e0e0;
+        --color-foreground: #0e1e4b;
+        --color-link: #6ab7f5;
+        --color-link-active: #6ab7f5;
+        --color-header-bg: #a79f9f;
+        --color-header-text: #fff2ac;
+        --color-footer-bg: #a79f9f;
+        --color-footer-text: #fff2ac;
+        --color-background-subtle: #ffffff;
+        --color-foreground-muted: #000000;
+        --color-border: #000000;
+        --button-primary-bg: #1a1a1a;
+        --button-primary-text: #ffffff;
+        --button-secondary-bg: #ffffff;
+        --button-secondary-text: #1a1a1a;
+        --style-border-radius-inputs: calc(2 / 16 * 1rem);
+        --style-border-radius-buttons: calc(0 / 16 * 1rem);
+        --transition-duration: 0.2s;
+        --transition-timing: ease;
+        --z-dropdown: 100;
+        --z-sticky: 200;
+        --z-fixed: 300;
+        --z-modal-backdrop: 400;
+        --z-modal: 500;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--color-background);
+        color: var(--color-foreground);
+        font-family: var(--font-primary--family);
+        font-style: var(--font-primary--style);
+        font-weight: var(--font-primary--weight);
+      }
+
+      main {
+        text-align: center;
+      }
+
+      img {
+        width: 120px;
+        height: auto;
+        display: block;
+        margin: 0 auto 1rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: var(--font-size-h1);
+        line-height: 1.1;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 1rem;
+        color: var(--color-link);
+        font-size: var(--font-size-base);
+        text-decoration-line: underline;
+        text-decoration-color: var(--color-link);
+        text-underline-offset: 0.2em;
+        transition: text-decoration-color var(--transition-duration) var(--transition-timing),
+          color var(--transition-duration) var(--transition-timing);
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        color: var(--color-link-active);
+        text-decoration-color: var(--color-link-active);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets/favicon.png" alt="Galerie Linger logo" />
+      <h1>Galerie Linger</h1>
+      <a class="cta" href="https://shop.galerielinger.com">Coming Soon</a>
+    </main>
+  </body>
+</html>
